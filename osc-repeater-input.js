@@ -8,7 +8,7 @@ var oscServer = new Server(INPUT_PORT, '127.0.0.1', () => {
 
 oscServer.on('message', function (msg) {
   console.log(msg);
-  let floats  = [];
+  let floats  = [msg[0]];
   msg.forEach((v)=> {
     let f = parseFloat(v);
     if(!isNaN(f))
@@ -19,7 +19,11 @@ oscServer.on('message', function (msg) {
   console.log('sending', floats);
   if(socket !== undefined)
   {
-    socket.send(JSON.stringify(floats))
+    if(socket.readyState == 1)
+    {
+      socket.send(JSON.stringify(floats))
+    }
+
   }
 });
 
