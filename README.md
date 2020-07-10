@@ -20,10 +20,10 @@ run npm install
 # run
 node osc-repeater-input.js
 
-Send OSC to \toMimic, 127.0.0.1, port:12345
+This will forward any OSC sent to local machine running the node program, port 12345.
 
 Fork this mimic project to receive input to the Learner.js library from the node server
 
 https://mimicproject.com/code/10fe5752-913e-71d8-3fd4-0ec0f0b9f4f3
 
-You can change the OUTPUT_PORT and OSC_ADDRESS variables accordingly.
+You can change the OUTPUT_PORT variables accordingly.
