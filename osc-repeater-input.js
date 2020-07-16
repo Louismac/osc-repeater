@@ -1,5 +1,5 @@
 const WebSocket = require('ws');
-const { Server } = require('node-osc');
+const { Server }  = require('node-osc');
 const INPUT_PORT = 12345;
 const OSC_ADDRESS = "/toMimic"
 var oscServer = new Server(INPUT_PORT, '127.0.0.1', () => {

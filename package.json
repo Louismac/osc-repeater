@@ -1,15 +1,16 @@
 {
-  "name": "websocket_tests",
+  "name": "osc-repeater",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "First, you will need to install node on your computer if you dont already have it.  [Download Node.js](https://nodejs.org/en/download)",
+  "main": "osc-repeater-input.js",
+  "dependencies": {
+    "node-osc": "^5.1.0",
+    "ws": "^7.3.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "node-osc": "^4.1.1",
-    "ws": "^6.0.0"
-  }
+  "license": "ISC"
 }
