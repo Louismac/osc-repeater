@@ -9,10 +9,10 @@ Uses websockets to pick up data from mimic and send via OSC
 Open Terminal (OSX) or Command Prompt (Windows) and use 'cd' to navigate to the osc-repeater directory 
 
 ## install
-run npm install
+``npm install``
 
 ## run
-node osc-repeater-output.js 
+``node osc-repeater-output.js``
 
 Fork this [mimic project](https://mimicproject.com/code/247e4538-0366-b735-9052-0e875a96a140)to send output from the Learner.js library to the node program, which will forward on OSC 
 
@@ -25,10 +25,10 @@ Uses websockets to pick up data from OSC and send to MIMIC via Websockets
 Open Terminal (OSX) or Command Prompt (Windows) and use 'cd' to navigate to the osc-repeater directory 
 
 ## install
-run npm install
+``npm install``
 
 ## run
-node osc-repeater-input.js
+``node osc-repeater-input.js``
 
 Send OSC to \toMimic, 127.0.0.1, port:12345
 
